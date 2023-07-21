@@ -11,3 +11,5 @@ Budget Buddy is your ultimate companion in managing your personal finances effic
 5. **Transaction View**: Access a dedicated page to view all your transactions at a glance.
 6. **Income Addition**: Add and categorize your various income sources seamlessly. Keep track of your earnings and understand your financial capacity accurately.
 7. **Expense Management**: Record your expenses effortlessly with the dedicated expense addition page. Categorize expenses, add detailed descriptions.
+
+## Icon(s) from [Flaticon](https://www.flaticon.com/free-icons/man) created by Freepik
