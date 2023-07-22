@@ -1,34 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import avatar from '../../img/avatar.png'
 import { signout } from '../../utils/Icons'
-import { menuItems } from '../../utils/menuitems'
+import { menuItems } from '../../utils/menuItems'
 
-function Navigation () {
+function Navigation({active, setActive}) {
+    
     return (
         <NavStyled>
-                <div className="user-con">
-                    <img src={avatar} alt="" />
-                    <div className="text">
-                        <h2>Me</h2>
-                        <p>Your Money</p>
-                    </div>
+            <div className="user-con">
+                <img src={avatar} alt="" />
+                <div className="text">
+                    <h2>Mike</h2>
+                    <p>Your Money</p>
                 </div>
-                <ul className="menu-items">
-                    {menuItems.map((item) => {
-                        return <li
-                            key={item.id}
-                        >
-                            {item.icon}
-                            <span>{item.title}</span>
-                        </li>
-                    })}
-                </ul>
-                <div className="bottom-nav">
-                    <li>
-                        {signout} Sign Out
+            </div>
+            <ul className="menu-items">
+                {menuItems.map((item) => {
+                    return <li
+                        key={item.id}
+                        onClick={() => setActive(item.id)}
+                        className={active === item.id ? 'active': ''}
+                    >
+                        {item.icon}
+                        <span>{item.title}</span>
                     </li>
-                </div>
+                })}
+            </ul>
+            <div className="bottom-nav">
+                <li>
+                    {signout} Sign Out
+                </li>
+            </div>
         </NavStyled>
     )
 }
@@ -59,13 +62,12 @@ const NavStyled = styled.nav`
             border: 2px solid #FFFFFF;
             padding: .2rem;
             box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
-
         }
         h2{
             color: rgba(34, 34, 96, 1);
         }
         p{
-            color: rgba(34, 34, 96, 1);
+            color: rgba(34, 34, 96, .6);
         }
     }
 
@@ -89,6 +91,23 @@ const NavStyled = styled.nav`
                 font-size: 1.4rem;
                 transition: all .4s ease-in-out;
             }
+        }
+    }
+
+    .active{
+        color: rgba(34, 34, 96, 1) !important;
+        i{
+            color: rgba(34, 34, 96, 1) !important;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: #222260;
+            border-radius: 0 10px 10px 0;
         }
     }
 `;
