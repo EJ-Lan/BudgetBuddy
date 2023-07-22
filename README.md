@@ -8,9 +8,8 @@ Budget Buddy is your ultimate companion in managing your personal finances effic
 2. **Recent History**: The Dashboard includes a Recent History section, displaying your most recent transactions for quick reference and easy tracking.
 3. **Salary and Expense Tracking**: Keep a record of your monthly salary and monitor your recurring expenses. Budget Buddy helps you stay aware of your financial inflows and outflows, making it simpler to maintain a balanced budget.
 4. **Total Income, Total Expenses, and Total Balance**: The Dashboard prominently displays the total income, total expenses, and your current balance, giving you a real-time snapshot of your financial position.
-5. **Transaction View**: Access a dedicated page to view all your transactions at a glance.
-6. **Income Addition**: Add and categorize your various income sources seamlessly. Keep track of your earnings and understand your financial capacity accurately.
-7. **Expense Management**: Record your expenses effortlessly with the dedicated expense addition page. Categorize expenses, add detailed descriptions.
+5. **Income Addition**: Add and categorize your various income sources seamlessly. Keep track of your earnings and understand your financial capacity accurately.
+6. **Expense Management**: Record your expenses effortlessly with the dedicated expense addition page. Categorize expenses, add detailed descriptions.
 
 ## Attribution
 Icon(s) from [Flaticon](https://www.flaticon.com/free-icons/man) created by Freepik
